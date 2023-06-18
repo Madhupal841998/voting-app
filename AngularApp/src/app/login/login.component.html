@@ -1,0 +1,27 @@
+<p-toast position="bottom-center"></p-toast>
+<div class="container d-flex  mt-5">
+    <div class="row">
+        <div class="col-10">
+            <form class="py-3" [formGroup]="loginForm">
+                <div class="row border-bottom">
+                    <div class="col-md-12 pb-2">
+                        <div class="card">
+                            <div class="col-md-12 col-12 mb-3">
+                                <label class="required" for="name">Name :</label>
+                                <input for="name" type="text" formControlName="name"
+                                    placeholder="Enter Your Full Name" />
+                            </div>
+                            <div class="col-md-12 col-12 mb-3">
+                                <label class="required" for="password">Password :</label>
+                                <input type="password" formControlName="password" />
+                            </div>
+                            <div class="col-md-12 col-12 d-flex justify-content-center">
+                                <input type="submit" value="Submit" (click)="login()" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

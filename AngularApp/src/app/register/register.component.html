@@ -1,0 +1,40 @@
+<p-toast position="bottom-center"></p-toast>
+<div class="container d-flex  mt-5">
+    <div class="row">
+        <div class="col-10">
+            <form class="py-3" [formGroup]="registerForm">
+                <div class="row border-bottom">
+                    <div class="col-md-12 pb-2">
+                        <div class="card">
+                            <div class="col-md-12 col-12 mb-3">
+                                <label class="required" for="name">Name :</label>
+                                <input for="name" type="text" formControlName="name"
+                                    placeholder="Enter Your Full Name" />
+                            </div>
+                            <div class="col-md-12 col-12 mb-3">
+                                <span title="For Admin Login, use @admin.com">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                </span>
+                                <label class="required" for="email">Email :</label>
+                                <input for="email" type="email" formControlName="email"
+                                    placeholder="Enter Your Email" />
+                            </div>
+                            <div class="col-md-12 col-12 mb-3">
+                                <label class="required" for="phone">Phone :</label>
+                                <input for="phone" type="number" formControlName="phone"
+                                    placeholder="Enter Your Phone No." />
+                            </div>
+                            <div class="col-md-12 col-12 mb-3">
+                                <label class="required" for="password">Password :</label>
+                                <input type="password" formControlName="password" />
+                            </div>
+                            <div class="col-md-12 col-12 d-flex justify-content-center">
+                                <input type="submit" value="Submit" (click)="adduser()" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

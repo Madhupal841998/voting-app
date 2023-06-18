@@ -1,0 +1,43 @@
+<p-toast position="bottom-center"></p-toast>
+<div class="container d-flex mt-5">
+    <div class="row">
+        <div class="col-10">
+            <form class="py-3" [formGroup]="votingForm">
+                <div class="row border-bottom">
+                    <div class="col-md-12 pb-2">
+                        <div class="card">
+                            <div class="col-md-12 col-12 mb-3 f-row">
+                                <input type="radio" id="can1" class="my-5" name="candidateVoted" value="1"
+                                    formControlName="candidateVoted">
+                                <label for="can1">Candidate 1</label><br>
+                            </div>
+                            <div class="col-md-12 col-12 mb-3 f-row">
+                                <input type="radio" id="can2" class="my-5" name="candidateVoted" value="2"
+                                    formControlName="candidateVoted">
+                                <label for="can2">Candidate 2</label><br>
+                            </div>
+                            <div class="col-md-12 col-12 mb-3 f-row">
+                                <input type="radio" id="can3" class="my-5" name="candidateVoted" value="3"
+                                    formControlName="candidateVoted">
+                                <label for="can3">Candidate 3</label><br>
+                            </div>
+                            <div class="col-md-12 col-12 mb-3 f-row">
+                                <input type="radio" id="can4" class="my-5" name="candidateVoted" value="4"
+                                    formControlName="candidateVoted">
+                                <label for="can4">Candidate 4</label><br>
+                            </div>
+                            <div class="col-md-12 col-12 mb-3">
+                                <input type="radio" id="can5" class="my-5" name="candidateVoted" value="5"
+                                    formControlName="candidateVoted">
+                                <label for="can5">Candidate 5</label><br>
+                            </div>
+                            <div class="col-md-12 col-12 mt-3 d-flex justify-content-center">
+                                <input type="submit" value="Submit" (click)="vote()" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
